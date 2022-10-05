@@ -31,6 +31,9 @@ printRectangle(9, 5)
 
 print("******** Programme principal ********")
 from functions import convert
+from functions import printTriangle
+printTriangle(8)
+
 
 print(convert(120, 8))
 print(convert(10, 2))

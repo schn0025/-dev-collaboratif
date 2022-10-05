@@ -55,3 +55,12 @@ def convert(n : int, b : int) -> str :
         else:
             return ('erreur',r)
     return rep[::-1]
+
+
+def printTriangle(size: int) :
+    for i in range(1, size+1):
+        p = ""
+        for _ in range(i):
+            p += "*"
+        print(p)
+printTriangle(8)

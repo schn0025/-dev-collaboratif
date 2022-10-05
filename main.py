@@ -25,6 +25,9 @@
 # CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
 # ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 # POSSIBILITY OF SUCH DAMAGE.
+from functions import printRectangle
+printRectangle(9, 5)
+
 
 print("******** Programme principal ********")
 from functions import convert
@@ -39,3 +42,5 @@ print(convert(108, 8))
 print(convert(102, 2))
 print(convert(404, 5))
 print(convert(2022, 9))
+
+

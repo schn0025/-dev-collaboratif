@@ -9,4 +9,3 @@ def convert(n : int, b : int) -> str :
         n=q
         rep+=str(r)
     return rep[::-1]
-print(convert(83,4))

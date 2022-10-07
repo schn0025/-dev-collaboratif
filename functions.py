@@ -56,7 +56,6 @@ def convert(n : int, b : int) -> str :
             return ('erreur',r)
     return rep[::-1]
 
-
 def printTriangle(size: int) :
     for i in range(1, size+1):
         p = ""
@@ -64,3 +63,9 @@ def printTriangle(size: int) :
             p += "*"
         print(p)
 printTriangle(8)
+
+def printRectangle(width: int, height: int) :
+    for i in range(height):
+        for y in range(width):
+            print('*',end='')
+        print()

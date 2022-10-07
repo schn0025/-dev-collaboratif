@@ -30,10 +30,15 @@
 print("******** Programme principal ********")
 from functions import convert
 from functions import printTriangle
-printTriangle(8)
-
+from functions import printTriangleOutline
+from functions import printRectangleOutline
 from functions import printRectangle
+
+printTriangle(8)
+printTriangleOutline(8)
+
 printRectangle(9, 5)
+printRectangleOutline(9, 5)
 
 print(convert(120, 8))
 print(convert(10, 2))

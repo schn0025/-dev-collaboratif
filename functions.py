@@ -56,13 +56,6 @@ def convert(n : int, b : int) -> str :
             return ('erreur',r)
     return rep[::-1]
 
-def printTriangle(size: int) :
-    for i in range(1, size+1):
-        p = ""
-        for _ in range(i):
-            p += "*"
-        print(p)
-
 def printRectangle(width: int, height: int) :
     for i in range(height):
         for y in range(width):
@@ -80,3 +73,24 @@ def printRectangleOutline(width: int, height: int) :
         print('*')
     for i in range(width):
         print('*',end='')
+
+def printTriangle(size: int):
+    for i in range(1, size+1):
+        p = ""
+        for _ in range(i):
+            p += "*"
+        print(p)
+
+def printTriangleOutline(size: int):
+    for i in range(1, size+1):
+        p = ""
+        if i < 3 or i == size:
+            for _ in range(i):
+                p += "*"
+        else:
+            p += "*"
+            for _ in range(i-2):
+                p += " "
+            p += "*"
+        print(p)
+

@@ -62,10 +62,21 @@ def printTriangle(size: int) :
         for _ in range(i):
             p += "*"
         print(p)
-printTriangle(8)
 
 def printRectangle(width: int, height: int) :
     for i in range(height):
         for y in range(width):
             print('*',end='')
         print()
+
+def printRectangleOutline(width: int, height: int) :
+    for i in range(width):
+        print('*',end='')
+    print()
+    for i in range(height-2):
+        print('*',end='')
+        for i in range(width-2):
+            print(" ",end='')
+        print('*')
+    for i in range(width):
+        print('*',end='')
